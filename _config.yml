@@ -15,15 +15,15 @@
 minimal_mistakes_skin: "aqua" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale: "en-US"
+locale: "ko-KR"
 title: "준수의 생로병사(生老甁死)"
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "Junsuboy"
-description: "An amazing website."
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description: "프론트엔드 개발자 지향"
+url: "https://junsuboy.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
-repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository: https://github.com/junsuboy
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
@@ -59,8 +59,8 @@ reCaptcha:
 atom_feed:
   path: # blank (default) uses feed.xml
   hide: # true, false (default)
-search: # true, false (default)
-search_full_content: # true, false (default)
+search: true
+search_full_content: true
 search_provider: # lunr (default), algolia, google
 algolia:
   application_id: # YOUR_APPLICATION_ID
@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name: "Junsuboy"
-  avatar: "/assets/images/IMG_0485.jpg"
+  avatar: "/assets/images/dessert_fox.jpg"
   bio: "Trying to be always nice"
   location: "Seoul, Korea"
   email:
