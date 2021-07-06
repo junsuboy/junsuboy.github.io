@@ -37,6 +37,7 @@ last_modified_at: 2021-07-06
   <ul>
   <li> 김치만두</li>
   <li> 고기만두</li>
+  </ul>
 </ul>
 
 ```html
