@@ -74,11 +74,10 @@ Did you know that? Inline-block isn't only for code!
 [구글 홈페이지](https://www.google.com)
 ```
 
-![image](../assets/images/dessert_fox.jpg)
+![fox](https://junsuboy.github.io/assets/images/dessert_fox.jpg)
 
 ```
-![image](../assets/images/dessert_fox.jpg)
-// 저는 이걸 로컬로 했는디, 링크를 걸어도 됩니다.
+![image](https://junsuboy.github.io/assets/images/dessert_fox.jpg)
 ```
 
 > 이것은 인용문입니다
