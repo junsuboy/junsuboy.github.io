@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name: "Junsuboy"
-  avatar: /assets/images/IMG_0485.jpg
+  avatar: "/assets/images/IMG_0485.jpg"
   bio: "Trying to be always nice"
   location: "Seoul, Korea"
   email:
