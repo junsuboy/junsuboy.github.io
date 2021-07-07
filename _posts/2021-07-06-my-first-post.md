@@ -7,6 +7,8 @@ categories:
 tags:
   - [Blog, jekyll, Github, Git]
 
+comments: true
+
 toc: true
 toc_sticky: true
 
