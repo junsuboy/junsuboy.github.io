@@ -3,47 +3,13 @@
 ---
 
 @charset "utf-8";
-@import "minimal-mistakes/skins/aqua"; // skin
-@import "minimal-mistakes";
 
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR|Ubuntu+Mono);
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
 @font-face {
-  font-family: "Cafe24SsurroundAir";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+  font-family: "MapoFlowerIsland";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
-}
-
-// https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#customizing
-$sans-serif: "Cafe24SsurroundAir";
-$monospace: "Cafe24SsurroundAir";
-$type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
-
-// https://github.com/mmistakes/minimal-mistakes/issues/1219
-html {
-  font-size: 12px; // change to whatever
-
-  @include breakpoint($medium) {
-    font-size: 14px; // change to whatever
-  }
-
-  @include breakpoint($large) {
-    font-size: 16px; // change to whatever
-  }
-
-  @include breakpoint($x-large) {
-    font-size: 18px; // change to whatever
-  }
-}
-
-.highlight {
-  font-family: $monospace;
-  font-size: $type-size-4-5;
-}
-
-.language-plaintext {
-  font-family: $monospace;
-  font-size: $type-size-5;
-  background: #c0ffee;
 }
