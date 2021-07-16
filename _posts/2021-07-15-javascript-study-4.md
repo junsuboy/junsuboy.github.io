@@ -369,7 +369,8 @@ h1.style["background-color"];
   })
 </script>
 ```
-```html {.line-numbers}
+
+```html
 <head>
   <style>
     h1 {
