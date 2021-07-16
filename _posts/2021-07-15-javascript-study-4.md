@@ -32,7 +32,7 @@ last_modified_at: 2021-07-15
 - DOMContentLoaded 이벤트는 웹 브라우저가 문서 객체를 모두 읽고 나서 실행하는 이벤트
 - 다음과 같이 코드를 구성하면 DOMContentLoaded 상태가 되었을 때 콜백 함수를 호출
 
-```javascript{.line-numbers}
+```javascript
 <!DOCTYPE html>
 <html>
  <head>
@@ -68,7 +68,7 @@ last_modified_at: 2021-07-15
 
 `document.querySelector` **사용 예시**
 
-```javascript {.line-numbers}
+```javascript
 <script>
   document.addEventListener('DOMContentLoaded', () => {
   // 요소를 읽어들입니다.
@@ -87,7 +87,7 @@ last_modified_at: 2021-07-15
 
 `document.querySelectorAll` **사용 예시**
 
-```javascript {.line-numbers}
+```javascript
 <script>
    document.addEventListener('DOMContentLoaded', () => {
      // 요소를 읽어들입니다.
@@ -119,7 +119,7 @@ last_modified_at: 2021-07-15
 
 **사용 예시**
 
-```javascript {.line-numbers}
+```javascript
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const a = document.querySelector('#a')
@@ -144,7 +144,7 @@ last_modified_at: 2021-07-15
 
 **사용 예시**
 
-```javascript {.line-numbers}
+```javascript
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const rects = document.querySelectorAll('.rect')
@@ -170,7 +170,7 @@ last_modified_at: 2021-07-15
 
 ![image](https://user-images.githubusercontent.com/86935775/125891182-0ee366cb-3ca6-4d6f-bb5e-7901d77fa492.png)
 
-```javascript {.line-numbers}
+```javascript
 h1.style.backgroundColor; // 이 형태를 가장 많이 사용
 h1.style["backgroundColor"];
 h1.style["background-color"];
@@ -180,7 +180,7 @@ h1.style["background-color"];
 
 `document.createElement()` 메소드로 `h1` 태그를 생성하고, 이를 `document.body` 태그 아래에 추가하는 코드
 
-```javascript {.line-numbers}
+```javascript
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     // 문서 객체 생성하기
@@ -211,7 +211,7 @@ h1.style["background-color"];
 
 **1. 문서 객체 생성 및 추가**
 
-```javascript {.line-numbers}
+```javascript
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     // 문서 객체 생성하기
@@ -235,7 +235,7 @@ h1.style["background-color"];
 
 **2. 문서 객체 이동**
 
-```javascript {.line-numbers}
+```javascript
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     // 문서 객체 읽어들이고 생성하기
@@ -279,7 +279,7 @@ h1.style["background-color"];
 
 **사용 예시**
 
-```javascript {.line-numbers}
+```javascript
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
@@ -306,7 +306,7 @@ h1.style["background-color"];
 
 **사용 예시**
 
-```javascript {.line-numbers}
+```javascript
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     let counter = 0
@@ -337,7 +337,7 @@ h1.style["background-color"];
 
 **사용 예시**
 
-```javascript {.line-numbers}
+```javascript
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     let counter = 0
