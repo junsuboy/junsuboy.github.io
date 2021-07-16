@@ -382,3 +382,5 @@ h1.style["background-color"];
   <p>이벤트 연결 상태: 해제</p>
 </body>
 ```
+
+.
