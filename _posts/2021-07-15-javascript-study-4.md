@@ -362,7 +362,7 @@ h1.style["background-color"];
     disconnectButton.addEventListener('click', () => {
       if (isConnect === true) {
         h1.removeEventListener('click', listener)
-        p.textContent = '이벤트 연결 상태: 해제’
+        p.textContent = '이벤트 연결 상태: 해제'
         isConnect = false
       }
     })
