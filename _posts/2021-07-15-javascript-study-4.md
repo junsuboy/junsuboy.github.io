@@ -352,7 +352,7 @@ h1.style["background-color"];
     h1.textContent = `클릭 횟수: ${counter++}`
     }
 
-  connectButton.addEventListener('click', () => {
+    connectButton.addEventListener('click', () => {
     if (isConnect === false) {
       h1.addEventListener('click', listener)
       p.textContent = '이벤트 연결 상태: 연결’
@@ -382,5 +382,3 @@ h1.style["background-color"];
   <p>이벤트 연결 상태: 해제</p>
 </body>
 ```
-
-.
