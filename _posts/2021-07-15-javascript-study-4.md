@@ -368,12 +368,14 @@ h1.style["background-color"];
     })
   })
 </script>
+```
 
+```html {.line-numbers}
 <style>
   h1 {
     /* 클릭을 여러 번 했을 때
          글자가 선택되는 것을 막기 위한 스타일 */
-     user-select: none;
+    user-select: none;
   }
 </style>
 <body>
@@ -383,5 +385,3 @@ h1.style["background-color"];
   <p>이벤트 연결 상태: 해제</p>
 </body>
 ```
-
-## d
