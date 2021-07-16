@@ -369,15 +369,16 @@ h1.style["background-color"];
   })
 </script>
 ```
-
 ```html {.line-numbers}
-<style>
-  h1 {
-    /* 클릭을 여러 번 했을 때
-         글자가 선택되는 것을 막기 위한 스타일 */
-    user-select: none;
-  }
-</style>
+<head>
+  <style>
+    h1 {
+      /* 클릭을 여러 번 했을 때
+           글자가 선택되는 것을 막기 위한 스타일 */
+      user-select: none;
+    }
+  </style>
+</head>
 <body>
   <h1>클릭 횟수: 0</h1>
   <button id="connect">이벤트 연결</button>
