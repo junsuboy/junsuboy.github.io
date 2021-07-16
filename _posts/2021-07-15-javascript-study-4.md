@@ -368,6 +368,7 @@ h1.style["background-color"];
     })
   })
 </script>
+
 <style>
   h1 {
     /* 클릭을 여러 번 했을 때
@@ -382,3 +383,5 @@ h1.style["background-color"];
   <p>이벤트 연결 상태: 해제</p>
 </body>
 ```
+
+## d
