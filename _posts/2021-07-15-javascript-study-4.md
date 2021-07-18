@@ -355,7 +355,7 @@ h1.style["background-color"];
     connectButton.addEventListener('click', () => {
     if (isConnect === false) {
       h1.addEventListener('click', listener)
-      p.textContent = '이벤트 연결 상태: 연결’
+      p.textContent = '이벤트 연결 상태: 연결'
       isConnect = true
     }
   })
