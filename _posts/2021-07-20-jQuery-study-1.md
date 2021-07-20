@@ -152,19 +152,19 @@ $("#toggle-btn").click(function () {
 
 **실행결과**
 
-1. 초기화면
+**1. 초기화면**
 
 ![image](https://user-images.githubusercontent.com/86935775/126338050-4edc3039-5b16-427d-93ad-10447cc394d9.png)
 
-2. 숨기기
+**2. 숨기기**
 
 ![image](https://user-images.githubusercontent.com/86935775/126338201-85195a01-0f7d-4266-a443-64e99da32ce4.png)
 
-3. 보이기
+**3. 보이기**
 
 ![image](https://user-images.githubusercontent.com/86935775/126338050-4edc3039-5b16-427d-93ad-10447cc394d9.png)
 
-4. 토글
+**4. 토글**
 
 ![image](https://user-images.githubusercontent.com/86935775/126338050-4edc3039-5b16-427d-93ad-10447cc394d9.png)
 
