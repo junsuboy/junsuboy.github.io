@@ -5,7 +5,7 @@ excerpt: "jQuery 기본 구문, 선택자, 함수, 메서드 등"
 categories:
   - jQuery
 tags:
-  - [Javascript], [jQuery]
+  - [Javascript, jQuery]
 
 comments: true
 toc: true
