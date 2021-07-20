@@ -19,10 +19,10 @@ foo:
 
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
-  - title: "About"
-    url: /about/
+  #  - title: "Quick-Start Guide"
+  #    url: /docs/quick-start-guide/
+  - title: "Category"
+    url: /categories/
   - title: "Sample Posts"
     url: /year-archive/
   - title: "Sample Collections"
