@@ -99,3 +99,92 @@ export default App;
 ![image](https://user-images.githubusercontent.com/86935775/127450418-2b1849df-bd39-40fb-bb61-339fb8b4377f.png)
 
 ![image](https://user-images.githubusercontent.com/86935775/127450473-b6fc8a27-7623-4c59-af3f-e73846449130.png)
+
+위와 같이 잘 실행 되는 것을 확인할 수 있는데, console창에는 2가지 warning이 존재한다.
+
+
+# key값과 alt값
+
+![3](https://user-images.githubusercontent.com/86935775/127453924-441e3d1a-fb57-4e28-a8fd-2c04071e519b.PNG)
+![4](https://user-images.githubusercontent.com/86935775/127453973-dfe5dda2-c80b-4fa3-a050-9c95cab40730.PNG)
+
+위와 같은 2가지 warning이 존재하게 되는데 그 해결 방법은 아래와 같다.
+
+<br><br>
+
+## key값
+
+각각 list 내의 child는 unique한 key prop을 가져야 함
+
+즉 모든 react의 element는 유일해야 하고
+이들을 list 안으로 집어넣을때, element는 유일성을 잃어버림
+
+```javascript
+const foodILike = [
+  {
+    id: 1,
+    name: "kimchi",
+    image:
+      "https://kstory365.files.wordpress.com/2015/01/kimchi-01-cabbage.jpg",
+  },
+  {
+    id: 2,
+    name: "ramen",
+    image:
+      "https://i.huffpost.com/gen/1410937/thumbs/o-RAMEN-facebook.jpg#Ramen%202000x1000",
+  },
+  {
+    id: 3,
+    name: "samgyeopsal",
+    image:
+      "https://www.gildedgingerbread.com/wp-content/uploads/2017/08/Samgyeopsal-1.jpg",
+  },
+  {
+    id: 4,
+    name: "kimbap",
+    image:
+      "https://www.maangchi.com/wp-content/uploads/2007/08/gimbap_plate.jpg",
+  },
+  {
+    id: 5,
+    name: "bibimbap",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/1200px-Dolsot-bibimbap.jpg",
+  },
+];
+```
+
+위와 같이 Object `foodILike`에 `id` 라는 새로운 props를 추가했고, 다음과 같이 `id`를 `key`값으로 활용할 것이다.
+
+```javascript
+function App() {
+  return (
+    <div className="App">
+      {foodILike.map((dish) => (
+        <Food key={dish.id} name={dish.name} picture={dish.image} />
+      ))}
+    </div>
+  );
+}
+```
+
+그러면 해당 오류가 사라지는 것을 확인할 수 있다.
+
+<br><br>
+
+## alt값
+
+모든 `<img>` 태그에는 `alt`값이 필요하다는 warning에 대한 해결 방법이다.
+
+```javascript
+function Food({ name, picture }) {
+  return (
+    <div>
+      <h2>I like {name}</h2>
+      <img src={picture} alt={name}/>
+    </div>
+  );
+}
+```
+
+다음과 같이 `alt` 값을 추가함으로서 해결할 수 있다.
