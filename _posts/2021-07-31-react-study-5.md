@@ -189,3 +189,5 @@ axios.put(url[, data[, config]])
 > PUT메서드는 서버에 있는 데이터베이스의 내용을 변경하는 것을 주 목적으로 하고 있다.
 
 <br><br>
+
+[상세 링크 참조 - Axios 러닝 가이드](https://xn--xy1bk56a.run/axios/guide/usage.html#get-%EC%9A%94%EC%B2%AD)
