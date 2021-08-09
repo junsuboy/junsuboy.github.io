@@ -293,7 +293,7 @@ new Promise((resolve, reject) => {
 ```
 
 
-    프라미스에서 에러가 발생하고 이 에러가 `finally`를 거쳐 `catch`까지 전달되는 것을 확인해봅시다.
+프라미스에서 에러가 발생하고 이 에러가 `finally`를 거쳐 `catch`까지 전달되는 것을 확인해봅시다.
 
 ```javascript
 new Promise((resolve, reject) => {
@@ -303,6 +303,29 @@ new Promise((resolve, reject) => {
   .catch((err) => alert(err)); // <-- .catch에서 에러 객체를 다룰 수 있음
 ```
 
-    finally는 프라미스 결과를 처리하기 위해 만들어 진 게 아닙니다. 프라미스 결과는 `finally`를 통과해서 전달되죠. 이런 특징은 아주 유용하게 사용되기도 합니다.
+finally는 프라미스 결과를 처리하기 위해 만들어 진 게 아닙니다. 프라미스 결과는 `finally`를 통과해서 전달되죠. 이런 특징은 아주 유용하게 사용되기도 합니다.
 
-프라미스 체이닝과 핸들러 간 결과 전달에 대해선 다음 챕터에서 더 이야기 나누도록 하겠습니다.
+<br>
+
+1. `.finally(f)`는 함수 `f`를 중복해서 쓸 필요가 없기 때문에 `.then(f, f)`보다 문법 측면에서 더 편리합니다.
+
+
+
+<br>
+
+<fieldset>
+
+<b>처리된 프라미스의 핸들러는 즉각 실행됩니다.</b>
+
+<br>
+
+프라미스가 대기 상태일 때, `.then/catch/finally`핸들러는 프라미스가 처리되길 기다립니다. 반면, 프라미스가 이미 처리상태라면 핸들러가 즉각 실행됩니다.
+
+```javascript
+// 아래 프라미스는 생성과 동시에 이행됩니다.
+let promise = new Promise(resolve => resolve("완료!"));
+
+promise.then(alert); // 완료! (바로 출력됨)
+```
+
+</fieldset>
