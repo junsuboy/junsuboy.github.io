@@ -103,6 +103,10 @@ executor는 `resolve`나 `reject` 중 하나를 반드시 호출해야 합니다
 
 처리가 끝난 프라미스에 `resolve`와 `reject`를 호출하면 무시되죠.
 
+</fieldset>
+
+<br>
+
 ```javascript
 let promise = new Promise(function (resolve, reject) {
   resolve("done");
@@ -115,10 +119,6 @@ let promise = new Promise(function (resolve, reject) {
 이렇게 executor에 의해 처리가 끝난 일은 결과 혹은 에러만 가질 수 있습니다.
 
 여기에 더하여 `resolve`나 `reject`는 인수를 하나만 받고(혹은 아무것도 받지 않음) 그 이외의 인수는 무시한다는 특성도 있습니다.
-
-</fieldset>
-
-<br>
 
 <fieldset>
 
@@ -140,6 +140,10 @@ let promise = new Promise(function (resolve, reject) {
 
 executor는 대개 무언가를 비동기적으로 수행하고, 약간의 시간이 지난 후에 `resolve`, `reject`를 호출하는데, 꼭 이렇게 할 필요는 없습니다. 아래와 같이 `resolve`나 `reject`를 즉시 호출할 수도 있습니다.
 
+</fieldset>
+
+<br>
+
 ```javascript
 let promise = new Promise(function (resolve, reject) {
   // 일을 끝마치는 데 시간이 들지 않음
@@ -150,8 +154,6 @@ let promise = new Promise(function (resolve, reject) {
 어떤 일을 시작했는데 알고 보니 일이 이미 끝나 저장까지 되어있는 경우, 이렇게 `resolve`나 `reject`를 즉시 호출하는 방식을 사용할 수 있습니다.
 
 이렇게 하면 프라미스는 즉시 이행 상태가 됩니다.
-
-</fieldset>
 
 <br>
 
@@ -292,7 +294,6 @@ new Promise((resolve, reject) => {
   .then((result) => alert(result)); // <-- .then에서 result를 다룰 수 있음
 ```
 
-
 프라미스에서 에러가 발생하고 이 에러가 `finally`를 거쳐 `catch`까지 전달되는 것을 확인해봅시다.
 
 ```javascript
@@ -309,8 +310,6 @@ finally는 프라미스 결과를 처리하기 위해 만들어 진 게 아닙�
 
 1. `.finally(f)`는 함수 `f`를 중복해서 쓸 필요가 없기 때문에 `.then(f, f)`보다 문법 측면에서 더 편리합니다.
 
-
-
 <br>
 
 <fieldset>
@@ -321,13 +320,11 @@ finally는 프라미스 결과를 처리하기 위해 만들어 진 게 아닙�
 
 프라미스가 대기 상태일 때, `.then/catch/finally`핸들러는 프라미스가 처리되길 기다립니다. 반면, 프라미스가 이미 처리상태라면 핸들러가 즉각 실행됩니다.
 
-<br><br>
+</fieldset>
 
-~~~javascript
+```javascript
 // 아래 프라미스는 생성과 동시에 이행됩니다.
-let promise = new Promise(resolve => resolve("완료!"));
+let promise = new Promise((resolve) => resolve("완료!"));
 
 promise.then(alert); // 완료! (바로 출력됨)ㅋ
-~~~
-
-</fieldset>
+```
