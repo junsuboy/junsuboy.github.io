@@ -323,11 +323,11 @@ finally는 프라미스 결과를 처리하기 위해 만들어 진 게 아닙�
 
 <br><br>
 
-```javascript
+~~~javascript
 // 아래 프라미스는 생성과 동시에 이행됩니다.
 let promise = new Promise(resolve => resolve("완료!"));
 
-promise.then(alert); // 완료! (바로 출력됨)
-```
+promise.then(alert); // 완료! (바로 출력됨)ㅋ
+~~~
 
 </fieldset>
